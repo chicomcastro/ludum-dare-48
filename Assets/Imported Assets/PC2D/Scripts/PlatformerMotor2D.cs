@@ -1070,7 +1070,7 @@ public class PlatformerMotor2D : MonoBehaviour
     private Vector2 _bottomRight;
     private Vector3 _toTransform;
     private float _currentDeltaTime;
-    private Rigidbody2D _rigidbody2D;
+    public Rigidbody2D _rigidbody2D;
     private float _distanceToBoundsCorner;
     private float _savedTimeScale;
     private Vector2 _disallowedSlopeNormal;

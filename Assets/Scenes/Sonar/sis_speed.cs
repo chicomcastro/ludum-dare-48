@@ -11,12 +11,6 @@ public class sis_speed : MonoBehaviour
         speed = startspeed;
     }
 
-    
-    void Update()
-    {
-        
-    }
-
     public void increase_speed(float n)
     {
         speed += n;
