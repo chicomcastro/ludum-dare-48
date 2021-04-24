@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 5713909112230887716}
   - component: {fileID: 5713909112230655114}
   m_Layer: 0
-  m_Name: Basic Player Controller
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,7 +131,7 @@ Transform:
   m_GameObject: {fileID: 5713909112237962436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.5, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 5713909112237551506}
   m_Father: {fileID: 0}
@@ -150,7 +150,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.15}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -161,7 +161,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.88}
+  m_Size: {x: 0.32, y: 0.6}
   m_EdgeRadius: 0
 --- !u!114 &5713909112230887718
 MonoBehaviour:
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticEnvLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
   envCheckDistance: 0.08
   minDistanceFromEnv: 0.04
   numOfIterations: 1
@@ -187,20 +187,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   additionalRaycastsPerSide: 0
-  groundSpeed: 16
+  groundSpeed: 4
   timeToGroundSpeed: 0.1
   groundStopDistance: 0.333
   airSpeed: 5
   changeDirectionInAir: 1
   timeToAirSpeed: 0.2
   airStopDistance: 2
-  fallSpeed: 32
+  fallSpeed: 16
   gravityMultiplier: 4
   fastFallSpeed: 32
   fastFallGravityMultiplier: 4
   ladderSpeed: 5
-  jumpHeight: 1.5
-  extraJumpHeight: 1.5
+  jumpHeight: 1
+  extraJumpHeight: 1
   numOfAirJumps: 1
   jumpWindowWhenFalling: 0.2
   jumpWindowWhenActivated: 0.2
@@ -215,7 +215,7 @@ MonoBehaviour:
   wallJumpMultiplier: 1
   wallJumpAngle: 70
   enableWallSticks: 1
-  wallSticksDuration: 1
+  wallSticksDuration: 0.6
   enableWallSlides: 1
   wallSlideSpeed: 5
   timeToWallSlideSpeed: 3
