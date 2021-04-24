@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class sis_health : MonoBehaviour
 {
-    
     public int maxhealth;
     int health;
 
@@ -13,15 +12,16 @@ public class sis_health : MonoBehaviour
         health = maxhealth;
     }
 
-    void Update()
+    public void increase_health(int n)
     {
         
-    }
-
-    public void increase_health(public int n)
-    {
         health += n;
         if(health > maxhealth)
             health = maxhealth;
+    }
+    public void increase_maxhealth(int n)
+    {
+        
+        maxhealth += n;
     }
 }

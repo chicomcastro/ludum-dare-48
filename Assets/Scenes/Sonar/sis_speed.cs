@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class I_speed : MonoBehaviour
+public class sis_speed : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float startspeed;
+    float speed;
     void Start()
+    {
+        speed = startspeed;
+    }
+
+    
+    void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void increase_speed(float n)
     {
-        
+        speed += n;
     }
 }
