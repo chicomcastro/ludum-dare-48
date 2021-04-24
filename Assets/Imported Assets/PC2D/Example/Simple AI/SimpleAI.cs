@@ -53,8 +53,8 @@ namespace  PC2D
                 RaycastHit2D hit = Physics2D.Raycast(
                     transform.position,
                     dir,
-                    distanceCheckForJump,
-                    Globals.ENV_MASK);
+                    distanceCheckForJump);//,
+                    //Globals.ENV_MASK);
 
                 if (hit.collider != null)
                 {
