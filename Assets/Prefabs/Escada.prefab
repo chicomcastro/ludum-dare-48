@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debug: 1
   triggerColor: {r: 1, g: 1, b: 1, a: 1}
-  enableRestrictedArea: 1
+  enableRestrictedArea: 0
   restrictedArea: {fileID: 0}
   disableRestrictedTop: 0
   topHeight: 0
