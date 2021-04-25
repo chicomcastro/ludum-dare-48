@@ -6,7 +6,7 @@ public class AttackController : MonoBehaviour
 {
     private Animator animator;
     private PC2D.PlatformerAnimation2D plataformerAnimation;
-    private PlatformerMotor2D plataformerMotor;
+    public PlatformerMotor2D plataformerMotor;
     private bool isAttacking = false;
     private Vector2 originalVelocity;
 
@@ -36,9 +36,15 @@ public class AttackController : MonoBehaviour
         StartCoroutine(ExecuteWithDelay(0.75f));
     }
 
+    public virtual void ExecuteAttack() {
+        // Este método será implementado conforme a especificidade do tipo de ataque
+        // Ver as classes MeleeAttack e RangedAttack que herdam de AttackController
+    }
+
     IEnumerator ExecuteWithDelay(float delay) {
         yield return new WaitForSeconds(delay);
         plataformerAnimation.enabled = true;
         isAttacking = false;
+        ExecuteAttack();
     }
 }
