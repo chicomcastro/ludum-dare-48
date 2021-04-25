@@ -5,7 +5,7 @@ using UnityEngine;
 public class sis_health : MonoBehaviour
 {
     public int maxhealth;
-    int health;
+    public int health;
 
     void Start()
     {
@@ -23,5 +23,10 @@ public class sis_health : MonoBehaviour
     {
         
         maxhealth += n;
+    }
+
+    public void decrease_health()
+    {
+        health -= 1;
     }
 }
