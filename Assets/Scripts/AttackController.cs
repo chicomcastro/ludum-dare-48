@@ -6,9 +6,11 @@ public class AttackController : MonoBehaviour
 {
     private Animator animator;
     private PC2D.PlatformerAnimation2D plataformerAnimation;
-    public PlatformerMotor2D plataformerMotor;
     private bool isAttacking = false;
     private Vector2 originalVelocity;
+
+    [HideInInspector]
+    public PlatformerMotor2D plataformerMotor;
 
     // Start is called before the first frame update
     void Start()
