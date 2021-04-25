@@ -6,8 +6,12 @@ public class ascending_debuff : MonoBehaviour
 {
     public Vector2 direcao;
     public int contador_subida;
-    public GameObject player;
 
+    private GameObject player;
+
+    private void Start() {
+        player = this.gameObject;
+    }
 
     void Update()
     {
