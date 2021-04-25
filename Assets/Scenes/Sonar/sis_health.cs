@@ -30,7 +30,7 @@ public class sis_health : MonoBehaviour
         maxhealth += n;
     }
 
-    public void decrease_health()
+    public void decrease_health(int n)
     {
         health -= 1;
     }
