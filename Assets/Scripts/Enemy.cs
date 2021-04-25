@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class triggerTrap : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    public GameObject arrow;
+    public float hp = 100f;
+    
     // Start is called before the first frame update
-    void OnTriggerEnter2D ()
+    void Start()
     {
-        Instantiate (arrow);
-        print("Foi");
+        
     }
 
     // Update is called once per frame
