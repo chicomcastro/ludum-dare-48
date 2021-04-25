@@ -5,6 +5,7 @@ using UnityEngine;
 public class ascending_debuff : MonoBehaviour
 {
     public Vector2 direcao;
+    public int contador_subida;
 
 
     void Update()
@@ -12,7 +13,8 @@ public class ascending_debuff : MonoBehaviour
         direcao = GetComponent<PlatformerMotor2D>().velocity;
         if(detect_ascending())
         {
-            print("subindoooo");
+            contador_subida++;
+            print(contador_subida);
         }
     }
 
