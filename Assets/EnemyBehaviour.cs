@@ -9,7 +9,6 @@ public class EnemyBehaviour : MonoBehaviour
     private bool canTurn = true;
     private float lastTimeStopped = 0f;
     private Vector2 colliderWidth;
-    private EnemyBoundaries eb;
     public float movement { get; private set; }
     private float originalSpeed;
 
@@ -20,19 +19,19 @@ public class EnemyBehaviour : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        eb = this.gameObject.GetComponent<EnemyBoundaries>();
         _motor = GetComponent<PlatformerMotor2D>();
         movement = -1;
         originalSpeed = _motor.groundSpeed;
         lastTimeStopped = Time.time;
         colliderWidth = this.gameObject.GetComponent<BoxCollider2D>().size;
-        StartCoroutine(WaitForBoundaries());
+        StartCoroutine(StayForAWhile(Random.Range(1f, 3f)));
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         if (!shouldMove) {
+            _motor.normalizedXMovement = 0;
             return;
         }
 
@@ -55,18 +54,12 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
-    private IEnumerator WaitForBoundaries()
-    {
-        yield return new WaitUntil(() => eb.leftBoundaryPos != null && eb.rightBoundaryPos != null);
-        shouldMove = true;
-    }
-
     private IEnumerator DelayTurn()
     {
         movement *= -1;
         _motor.groundSpeed = Random.Range(originalSpeed / 2, originalSpeed);
         canTurn = false;
-        yield return new WaitForSeconds(Random.Range(delayForTurn / 2, delayForTurn));
+        yield return new WaitForSeconds(0.75f);
         canTurn = true;
     }
 
