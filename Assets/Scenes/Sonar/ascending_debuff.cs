@@ -6,6 +6,7 @@ public class ascending_debuff : MonoBehaviour
 {
     public Vector2 direcao;
     public int contador_subida;
+    public GameObject player;
 
 
     void Update()
@@ -15,6 +16,7 @@ public class ascending_debuff : MonoBehaviour
         {
             contador_subida++;
             print(contador_subida);
+            player.GetComponent<sis_health>().maxhealth -= 0.01;
         }
     }
 

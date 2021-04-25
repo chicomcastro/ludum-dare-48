@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class dano : MonoBehaviour
 {
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,12 @@ public class dano : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+           
     }
+
+    void OnTriggerStay2D(Collider2D player)
+    {        
+         player.GetComponent<sis_health>().decrease_health();
+    }
+    
 }
