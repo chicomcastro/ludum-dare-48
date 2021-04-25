@@ -1070,7 +1070,7 @@ public class PlatformerMotor2D : MonoBehaviour
     private Vector2 _bottomRight;
     private Vector3 _toTransform;
     private float _currentDeltaTime;
-    public Rigidbody2D _rigidbody2D;
+    private Rigidbody2D _rigidbody2D;
     private float _distanceToBoundsCorner;
     private float _savedTimeScale;
     private Vector2 _disallowedSlopeNormal;
@@ -1079,7 +1079,7 @@ public class PlatformerMotor2D : MonoBehaviour
 
     // This is the unconverted motor velocity. This ignores slopes. It is converted into the appropriate vector before
     // moving.
-    private Vector2 _velocity;
+    public Vector2 _velocity;
 
     // The function is cached to avoid unnecessary memory allocation.
     private EasingFunctions.EasingFunc _dashFunction;

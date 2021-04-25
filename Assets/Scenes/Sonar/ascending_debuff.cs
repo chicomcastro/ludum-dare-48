@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class ascending_debuff : MonoBehaviour
 {
-    public Vector3 direcao;
+    public Vector2 direcao;
 
-    void Start()
+
+    void Update()
     {
-        direcao = GetComponent<PlatformerMotor2D>()._rigidbody2D.velocity;
+        direcao = GetComponent<PlatformerMotor2D>().velocity;
+        if(detect_ascending())
+        {
+            print("subindoooo");
+        }
     }
-
 
     public bool detect_ascending()
     {
         if(direcao.y > 0)
+        {
             return true;
+        }
         else
             return false;
     }
