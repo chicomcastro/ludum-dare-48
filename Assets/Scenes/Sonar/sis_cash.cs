@@ -11,7 +11,13 @@ public class sis_cash : MonoBehaviour
 
     public void Start()
     {
-        if (dinheiro != null) {
+        if (dinheiro == null) {
+            GameObject dinheiroObj = GameObject.FindGameObjectWithTag("Moeda");
+            if (dinheiroObj != null) {
+                dinheiro = dinheiroObj.GetComponent<Text>();
+            }
+        }
+        else {
             dinheiro.GetComponent<Text>().text = cash.ToString();
         }
     }

@@ -7,6 +7,7 @@ TagManager:
   - dano
   - Arrow
   - texto
+  - Moeda
   layers:
   - Default
   - TransparentFX
