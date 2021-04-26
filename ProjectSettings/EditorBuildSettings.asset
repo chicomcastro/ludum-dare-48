@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 01c339f6ad2f6154091866ea202dd96a
+  - enabled: 1
+    path: Assets/Scenes/Level2 + Thor 2.unity
+    guid: 044c5d067c1689242b9da675f4d1170e
   m_configObjects: {}
