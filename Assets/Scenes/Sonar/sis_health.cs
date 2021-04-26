@@ -9,6 +9,8 @@ public class sis_health : MonoBehaviour
 
     public double contador;
 
+    public int dificuldade;
+
     public GameObject vida;
 
     void Start()

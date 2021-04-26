@@ -2002,6 +2002,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Troll (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7914667327964093383, guid: 64fc067e9bfe2cd4a869619948a5533b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64fc067e9bfe2cd4a869619948a5533b, type: 3}
 --- !u!1 &1190102164

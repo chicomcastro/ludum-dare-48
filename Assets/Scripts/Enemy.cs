@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float hp = 100f;
+    public float hp = 20f;
     GameObject player;
 
     int cash;
@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        hp += player.GetComponent<sis_health>().dificuldade*10;
     }
 
     // Update is called once per frame

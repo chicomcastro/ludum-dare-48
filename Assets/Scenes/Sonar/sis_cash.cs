@@ -22,9 +22,13 @@ public class sis_cash : MonoBehaviour
         }
     }
 
+    public void Update()
+    {
+        dinheiro.GetComponent<Text>().text = cash.ToString();
+    }
+
     public void increasecash()
     {
         cash += 100;
-        dinheiro.GetComponent<Text>().text = cash.ToString();
     }
 }
