@@ -8,6 +8,7 @@ TagManager:
   - Arrow
   - texto
   - Moeda
+  - AudioManager
   layers:
   - Default
   - TransparentFX

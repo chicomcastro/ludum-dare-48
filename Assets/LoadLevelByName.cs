@@ -12,7 +12,7 @@ public class LoadLevelByName : MonoBehaviour
 
     private void Update() {
         if (inTouch && keyCode != KeyCode.None && Input.GetKeyDown(keyCode)) {
-            SceneManager.LoadScene(sceneName);
+            LoadLevel();
         }
     }
 
@@ -20,7 +20,7 @@ public class LoadLevelByName : MonoBehaviour
         if (other.tag == "Player") {
             inTouch = true;
             if (keyCode == KeyCode.None) {
-                SceneManager.LoadScene(sceneName);
+                LoadLevel();
             }
         }
     }
@@ -29,5 +29,11 @@ public class LoadLevelByName : MonoBehaviour
         if (other.tag == "Player") {
             inTouch = false;
         }
+    }
+
+    private void LoadLevel() {
+        Scene currentScene = SceneManager.GetActiveScene();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<LevelMemory>().SetLevelLoaded(currentScene.name[currentScene.name.Length - 1].ToString());
+        SceneManager.LoadScene(sceneName);
     }
 }

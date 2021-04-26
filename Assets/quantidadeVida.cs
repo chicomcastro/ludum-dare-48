@@ -15,18 +15,16 @@ public class quantidadeVida : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (player == null) {
-            player = GameObject.FindGameObjectWithTag("Player");
-        }
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {   
-            if(player.GetComponent<sis_health>().health < threshold)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = half;
-            }
+        if(player.GetComponent<sis_health>().health < threshold)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = half;
+        }
 
             if(player.GetComponent<sis_health>().health <= threshold - 10)
             {
