@@ -273,6 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Level1
+  keyCode: 0
 --- !u!61 &44660874
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7206,6 +7207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Level1
+  keyCode: 101
 --- !u!483693784 &1345026918
 TilemapRenderer:
   m_ObjectHideFlags: 0

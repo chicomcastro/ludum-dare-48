@@ -11,12 +11,14 @@ public class sis_cash : MonoBehaviour
 
     public void Start()
     {
-        dinheiro.GetComponent<Text>().text = cash.ToString();
+        if (dinheiro != null) {
+            dinheiro.GetComponent<Text>().text = cash.ToString();
+        }
     }
+
     public void increasecash()
     {
         cash += 100;
-
         dinheiro.GetComponent<Text>().text = cash.ToString();
     }
 }
