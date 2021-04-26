@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7ac574cb3bca94490eed9be59151f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defence: 0
+  defence: 1
   n: 0
 --- !u!114 &7840738415656884920
 MonoBehaviour:
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12e504b47e9ea0541a9c85714b418244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
 --- !u!114 &863561361
 MonoBehaviour:
   m_ObjectHideFlags: 0
