@@ -12,7 +12,6 @@ public class EnemyBehaviour : MonoBehaviour
     public float movement { get; private set; }
     private float originalSpeed;
 
-    public float delayForTurn = 1f;
     public float maxTimeStopped = 5f;
     public float stoppingDelay = 5f;
 
@@ -37,13 +36,14 @@ public class EnemyBehaviour : MonoBehaviour
 
         _motor.normalizedXMovement = movement;
         
+        // Verificação de plataformas
         int layerMask = 1 << 3;
         Vector2 startPos = (Vector2) this.transform.position + (_motor.facingLeft ? 1 : -1) * Vector2.left * colliderWidth.x * 1.5f;
-        RaycastHit2D hit = Physics2D.Raycast(startPos, -Vector2.up, Mathf.Infinity, layerMask);
-        Debug.DrawRay(startPos, -Vector2.up * hit.distance);
+        RaycastHit2D verticalHit = Physics2D.Raycast(startPos, -Vector2.up, Mathf.Infinity, layerMask);
+        Debug.DrawRay(startPos, -Vector2.up * verticalHit.distance);
 
         if (canTurn) {
-            if (hit.point.y < this.transform.position.y - colliderWidth.y * 1.5f / 2) {
+            if (verticalHit.point.y < this.transform.position.y - colliderWidth.y * 1.5f / 2) {
                 StartCoroutine(DelayTurn());
                 StartCoroutine(StayForAWhile(0.5f));
             }
@@ -51,6 +51,18 @@ public class EnemyBehaviour : MonoBehaviour
 
         if (Random.Range(0f, 1f) > 0.5f && Time.time - lastTimeStopped > stoppingDelay) {
             StartCoroutine(StayForAWhile());
+        }
+
+        // Verificação daa paredes
+        RaycastHit2D horizontalHit = Physics2D.Raycast(startPos, (_motor.facingLeft ? 1 : -1) * Vector2.left, Mathf.Infinity, layerMask);
+        Debug.DrawRay(startPos, (_motor.facingLeft ? 1 : -1) * Vector2.left * horizontalHit.distance);
+
+        if (canTurn) {
+            if (Mathf.Abs(horizontalHit.point.x - this.transform.position.x) <= colliderWidth.x * 1.5f) {
+                print("hit");
+                StartCoroutine(DelayTurn());
+                StartCoroutine(StayForAWhile(0.5f));
+            }
         }
     }
 

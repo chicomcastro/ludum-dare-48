@@ -1815,7 +1815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8051c34851c1834c9f866b37f059e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayForTurn: 5
   maxTimeStopped: 5
   stoppingDelay: 5
 --- !u!114 &1178471619
@@ -1857,7 +1856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4536825811544778023, guid: 64fc067e9bfe2cd4a869619948a5533b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.270493
+      value: -8.36
       objectReference: {fileID: 0}
     - target: {fileID: 4536825811544778023, guid: 64fc067e9bfe2cd4a869619948a5533b, type: 3}
       propertyPath: m_LocalPosition.z
