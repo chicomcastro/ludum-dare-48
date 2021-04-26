@@ -98,4 +98,5 @@ MonoBehaviour:
   threshold: 20
   player: {fileID: 4887940540228185452, guid: f0b27d9ac1b4b38498989df997e573f9, type: 3}
   half: {fileID: 21300000, guid: 8bb34543637591842937607f7b1f941a, type: 3}
+  full: {fileID: 21300000, guid: 7c138f6bc479cac42b1cb5ed3878d1dc, type: 3}
   multiplicador: 1

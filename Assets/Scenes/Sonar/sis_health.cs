@@ -7,6 +7,10 @@ public class sis_health : MonoBehaviour
     public double maxhealth;
     public double health;
 
+    public double contador;
+
+    public GameObject vida;
+
     void Start()
     {
         health = maxhealth;
@@ -18,18 +22,21 @@ public class sis_health : MonoBehaviour
             health = maxhealth;
     }
 
-    public void increase_health(int n)
-    {
-        
-        health += n;
-        
-    }
+    
     public void increase_maxhealth(int n)
     {
-        
+        contador += 0.5;
         maxhealth += n;
     }
-
+    public void increase_health(int n)
+    {
+        health += n;
+        if(contador != 0)
+        {
+            vida.GetComponent<quantidadeVida>().multiplicador -= contador;
+            contador = 0;
+        }
+    }
     public void decrease_health(int n)
     {
         health -= 1;
