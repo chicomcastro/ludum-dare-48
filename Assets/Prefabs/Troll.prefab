@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4536825811534821705}
   - component: {fileID: 7914667327964093383}
   - component: {fileID: 3121608838530088554}
+  - component: {fileID: -3785730213183164802}
   m_Layer: 0
   m_Name: Troll
   m_TagString: Untagged
@@ -190,6 +191,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324f10220fefc6943be3b3ccf7f07eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  danoo: 0
+--- !u!114 &-3785730213183164802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4536825811544881415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef026c2a5b0de35449bab3c3b61851cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 20
+  player: {fileID: 4887940540228185452, guid: f0b27d9ac1b4b38498989df997e573f9, type: 3}
 --- !u!1 &4536825811545069613
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,5 +4,10 @@ using UnityEngine;
 
 public class sis_cash : MonoBehaviour
 {
-    public int cash; // eh isso
+    public int cash = 0; // eh isso
+
+    public void increasecash()
+    {
+        cash += 100;
+    }
 }

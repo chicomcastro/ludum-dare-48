@@ -5,6 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float hp = 100f;
+    public GameObject player;
+
+    int cash;
     
     // Start is called before the first frame update
     void Start()
@@ -15,6 +18,10 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(hp <= 0)
+        {
+            player.GetComponent<sis_cash>().increasecash();
+            Destroy(gameObject);
+        }
     }
 }
