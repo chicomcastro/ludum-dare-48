@@ -31,7 +31,7 @@ public class LoadLevelByName : MonoBehaviour
         }
     }
 
-    private void LoadLevel() {
+    public void LoadLevel() {
         Scene currentScene = SceneManager.GetActiveScene();
         GameObject.FindGameObjectWithTag("Player").GetComponent<LevelMemory>().SetLevelLoaded(currentScene.name[currentScene.name.Length - 1].ToString());
         SceneManager.LoadScene(sceneName);

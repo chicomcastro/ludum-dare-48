@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 863561361}
   - component: {fileID: 863561362}
   - component: {fileID: 863561363}
+  - component: {fileID: 8354317345809432654}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Player
@@ -254,6 +255,8 @@ MonoBehaviour:
   preco_maxhealth: 0
   preco_health: 0
   preco_defence: 0
+  preco_speed: 0
+  preco_attack: 0
 --- !u!114 &-3791556564120849623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7ac574cb3bca94490eed9be59151f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defence: 0
   n: 0
 --- !u!114 &7840738415656884920
 MonoBehaviour:
@@ -309,6 +313,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxhealth: 100
   health: 100
+  contador: 0
+  vida: {fileID: 0}
 --- !u!114 &6698979420397499138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,6 +365,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8813416608317f488521d39a52bd042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8354317345809432654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4887940540228185452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dc8289a96ca4744f9233aab425f8cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GameOver
+  keyCode: 0
 --- !u!1 &4887940540228373574
 GameObject:
   m_ObjectHideFlags: 0

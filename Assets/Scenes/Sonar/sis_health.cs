@@ -20,6 +20,11 @@ public class sis_health : MonoBehaviour
     {
         if(health > maxhealth)
             health = maxhealth;
+
+        if(health <= 0)
+        {
+            gameObject.GetComponent<LoadLevelByName>().LoadLevel();
+        }
     }
 
     

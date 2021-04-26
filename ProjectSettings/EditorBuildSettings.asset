@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2 + Thor 2.unity
     guid: 044c5d067c1689242b9da675f4d1170e
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 392dc772295e7854ca2c63d047c2de51
   m_configObjects: {}
