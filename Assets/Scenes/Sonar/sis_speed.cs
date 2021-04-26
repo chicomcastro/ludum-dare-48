@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class sis_speed : MonoBehaviour
 {
-    public float startspeed;
-    float speed;
+    float startspeed = 1;
+    public float speed;
     void Start()
     {
         speed = startspeed;

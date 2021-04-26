@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 4887940540221861154}
   - component: {fileID: 76569745}
   - component: {fileID: -6700853177961100531}
-  - component: {fileID: -2854729051163976995}
   - component: {fileID: -3791556564120849623}
   - component: {fileID: 519991544216513843}
   - component: {fileID: 2384677814930086870}
@@ -55,6 +54,7 @@ GameObject:
   - component: {fileID: 863561362}
   - component: {fileID: 863561363}
   - component: {fileID: 8354317345809432654}
+  - component: {fileID: 4449609001982362497}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Player
@@ -240,23 +240,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-2854729051163976995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4887940540228185452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9c0231b6a0f796469f16f333d19b92a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  preco_maxhealth: 0
-  preco_health: 0
-  preco_defence: 0
-  preco_speed: 0
-  preco_attack: 0
 --- !u!114 &-3791556564120849623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +297,7 @@ MonoBehaviour:
   maxhealth: 100
   health: 100
   contador: 0
+  dificuldade: 0
   vida: {fileID: 0}
 --- !u!114 &6698979420397499138
 MonoBehaviour:
@@ -327,7 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12e504b47e9ea0541a9c85714b418244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startspeed: 0
+  speed: 0
 --- !u!114 &863561361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,6 +363,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: GameOver
   keyCode: 0
+--- !u!114 &4449609001982362497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4887940540228185452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4b4194388bef504ba629a4012aef510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: 1
 --- !u!1 &4887940540228373574
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,42 +16,42 @@ public class shop : MonoBehaviour
 
     public void buy_maxhealth(int n)
     {
-      if (GetComponent<sis_cash>().cash >= preco_maxhealth)
+      if (player.GetComponent<sis_cash>().cash >= preco_maxhealth)
       {
-        GetComponent<sis_health>().increase_maxhealth(n);
-        GetComponent<sis_cash>().cash -= preco_maxhealth;
+        player.GetComponent<sis_health>().increase_maxhealth(n);
+        player.GetComponent<sis_cash>().cash -= preco_maxhealth;
       }
     }
     public void buy_health(int n)
     {
-      if (GetComponent<sis_cash>().cash >= preco_health)
+      if (player.GetComponent<sis_cash>().cash >= preco_health)
       {
-        GetComponent<sis_health>().increase_health(n);
-        GetComponent<sis_cash>().cash -= preco_health;
+        player.GetComponent<sis_health>().increase_health(n);
+        player.GetComponent<sis_cash>().cash -= preco_health;
       }
     }
     public void buy_defence()
     {
-      if (GetComponent<sis_cash>().cash >= preco_defence)
+      if (player.GetComponent<sis_cash>().cash >= preco_defence)
       {
-        GetComponent<sis_defence>().increase_defence();
-        GetComponent<sis_cash>().cash -= preco_defence;
+        player.GetComponent<sis_defence>().increase_defence();
+        player.GetComponent<sis_cash>().cash -= preco_defence;
       }
     }
     public void buy_speed(int n) // 'n' eh percentual
     {
-      if (GetComponent<sis_cash>().cash >= preco_speed)
+      if (player.GetComponent<sis_cash>().cash >= preco_speed)
       {
-        GetComponent<sis_speed>().increase_speed(n);
-        GetComponent<sis_cash>().cash -= preco_speed;
+        player.GetComponent<sis_speed>().increase_speed(n);
+        player.GetComponent<sis_cash>().cash -= preco_speed;
       }
     }
     public void buy_attack(int n) // 'n' eh percentual
     {
-      if (GetComponent<sis_cash>().cash >= preco_attack)
+      if (player.GetComponent<sis_cash>().cash >= preco_attack)
       {
-        GetComponent<sis_attack>().increase_attack(n);
-        GetComponent<sis_cash>().cash -= preco_attack;
+        player.GetComponent<sis_attack>().increase_attack(n);
+        player.GetComponent<sis_cash>().cash -= preco_attack;
       }
     }
 

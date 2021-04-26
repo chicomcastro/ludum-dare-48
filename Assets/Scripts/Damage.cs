@@ -14,7 +14,7 @@ public class Damage : MonoBehaviour
         if (other.tag != "Player") {
             Enemy enemy = other.gameObject.GetComponent<Enemy>();
             if (enemy != null) {
-                enemy.hp -= damage*player.GetComponent<sis_attack>().attack;
+                enemy.hp -= damage*(player.GetComponent<sis_attack>().attack);
                 this.enabled = false;
             }
         }
