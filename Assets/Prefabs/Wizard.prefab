@@ -120,9 +120,10 @@ GameObject:
   - component: {fileID: 7823289014696855405}
   - component: {fileID: 8449162761768921789}
   - component: {fileID: 6043098470111717606}
+  - component: {fileID: 3503168928099234072}
   m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
+  m_Name: Wizard
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -182,7 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticEnvLayerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 8
   envCheckDistance: 0.08
   minDistanceFromEnv: 0.04
   numOfIterations: 1
@@ -241,7 +242,7 @@ MonoBehaviour:
   movingPlatformDebug: 0
   iterationDebug: 0
   slopeNormal: {x: 0, y: 0}
-  _rigidbody2D: {fileID: 0}
+  _velocity: {x: 0, y: 0}
 --- !u!114 &5713909112230887716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxhealth: 100
+  health: 100
 --- !u!114 &7823289014696855405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3edf30193fdfbb949a448f89e9a5d049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cash: 0
+  cash: 999999999
 --- !u!114 &6043098470111717606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,4 +334,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c4ca8432eabde4ab0022a4c3db3ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direcao: {x: 0, y: 0, z: 0}
+  direcao: {x: 0, y: 0}
+  contador_subida: 0
+--- !u!114 &3503168928099234072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5713909112237962436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c0231b6a0f796469f16f333d19b92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  preco_maxhealth: 10000
+  preco_health: 1000
+  preco_defence: 2000
