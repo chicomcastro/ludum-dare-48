@@ -37,7 +37,7 @@ public class sis_health : MonoBehaviour
             contador = 0;
         }
     }
-    public void decrease_health(int n)
+    public void decrease_health(float n)
     {
         health -= 1;
     }

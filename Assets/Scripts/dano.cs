@@ -9,7 +9,7 @@ public class dano : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {        
         if(other.tag == "Player")
-            other.GetComponent<sis_health>().decrease_health(danoo);
+            other.GetComponent<sis_health>().decrease_health(danoo*other.GetComponent<sis_defence>().defence);
     }
     
 }

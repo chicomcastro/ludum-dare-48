@@ -11,8 +11,14 @@ public class sis_speed : MonoBehaviour
         speed = startspeed;
     }
 
-    public void increase_speed(float n)
+    public void increase_speed(float n) // aumento percentual
     {
-        speed += n;
+        speed *= 1+n/100;
+        GetComponent<PlatformerMotor2D>().groundSpeed *= speed;
+        GetComponent<PlatformerMotor2D>().timeToGroundSpeed *= speed;
+        GetComponent<PlatformerMotor2D>().airSpeed *= speed;
+        GetComponent<PlatformerMotor2D>().timeToAirSpeed *= speed;
+        GetComponent<PlatformerMotor2D>().ladderSpeed *= speed;
+        GetComponent<PlatformerMotor2D>().timeToAirSpeed *= speed;
     }
 }
