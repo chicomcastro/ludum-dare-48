@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class shop : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
 
     public int preco_maxhealth, preco_health, preco_defence;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        if (player == null) {
-            player = GameObject.FindGameObjectWithTag("Player");
-        }
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void buy_maxhealth(int n)
