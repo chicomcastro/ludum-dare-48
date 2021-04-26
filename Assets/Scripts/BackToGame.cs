@@ -18,6 +18,7 @@ public class BackToGame : MonoBehaviour
 
 	void TaskOnClick(){
 		SceneManager.LoadScene("Level0");
+		player.transform.position = new Vector3 (-8.23f, 0.5f, 0f);
         print("Fui clicado");
 		player.GetComponent<sis_health>().increase_health(100);
 	}

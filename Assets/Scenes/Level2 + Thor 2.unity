@@ -10727,6 +10727,10 @@ PrefabInstance:
       propertyPath: dinheiro
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2384677814930086870, guid: f0b27d9ac1b4b38498989df997e573f9, type: 3}
+      propertyPath: defence
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4887940540228185452, guid: f0b27d9ac1b4b38498989df997e573f9, type: 3}
       propertyPath: m_Name
       value: Archer
