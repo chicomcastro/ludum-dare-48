@@ -3280,7 +3280,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Increase Speed
+  m_Text: Increase Speed $300
 --- !u!222 &94468759
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7127,7 +7127,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Increase Health
+  m_Text: Increase Health $1000
 --- !u!222 &1032202994
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10052,7 +10052,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Heal
+  m_Text: Heal $100
 --- !u!222 &1736573729
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10395,7 +10395,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Increase Defense
+  m_Text: Increase Defense $200
 --- !u!222 &1786880286
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14010,7 +14010,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Increase Attack
+  m_Text: Increase Attack $ 300
 --- !u!222 &1909513797
 CanvasRenderer:
   m_ObjectHideFlags: 0
