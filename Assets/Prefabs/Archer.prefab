@@ -128,19 +128,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   additionalRaycastsPerSide: 0
-  groundSpeed: 4
+  groundSpeed: 3
   timeToGroundSpeed: 0.1
   groundStopDistance: 0.333
-  airSpeed: 5
+  airSpeed: 3
   changeDirectionInAir: 1
   timeToAirSpeed: 0.2
   airStopDistance: 2
   fallSpeed: 16
   gravityMultiplier: 4
-  fastFallSpeed: 32
+  fastFallSpeed: 16
   fastFallGravityMultiplier: 4
   ladderSpeed: 5
-  jumpHeight: 1
+  jumpHeight: 0.75
   extraJumpHeight: 1
   numOfAirJumps: 1
   jumpWindowWhenFalling: 0.2
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3edf30193fdfbb949a448f89e9a5d049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cash: 1000
+  cash: 0
   dinheiro: {fileID: 0}
 --- !u!114 &2384677814930086870
 MonoBehaviour:
