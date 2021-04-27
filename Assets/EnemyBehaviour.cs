@@ -53,13 +53,12 @@ public class EnemyBehaviour : MonoBehaviour
             StartCoroutine(StayForAWhile());
         }
 
-        // Verificação daa paredes
+        // Verificação das paredes
         RaycastHit2D horizontalHit = Physics2D.Raycast(startPos, (_motor.facingLeft ? 1 : -1) * Vector2.left, Mathf.Infinity, layerMask);
         Debug.DrawRay(startPos, (_motor.facingLeft ? 1 : -1) * Vector2.left * horizontalHit.distance);
 
         if (canTurn) {
             if (Mathf.Abs(horizontalHit.point.x - this.transform.position.x) <= colliderWidth.x * 1.5f) {
-                print("hit");
                 StartCoroutine(DelayTurn());
                 StartCoroutine(StayForAWhile(0.5f));
             }
